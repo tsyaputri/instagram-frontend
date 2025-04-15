@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel - PicShare</title>
+  <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">PicShare Admin</h2>
+    <nav>
+      <a href="../index.html">Keluar</a>
+    </nav>
+  </header>
+
+  <main class="admin-container">
+    <section class="header-section">
+      <h2>Manajemen User</h2>
+      <button id="addUserBtn">+ Tambah User</button>
+    </section>
+
+    <table class="user-table" id="userTable">
+      <thead>
+        <tr>
+          <th>Foto</th>
+          <th>Nama</th>
+          <th>Bio</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data user di-generate lewat JS -->
+      </tbody>
+    </table>
+  </main>
+
+<!-- Modal Tambah/Edit User -->
+<div class="modal" id="userModal">
+    <div class="modal-content">
+      <h3 id="modalTitle">Tambah User</h3>
+      <form id="userForm">
+        <input type="hidden" id="userId">
+  
+        <main class="upload-container">
+          <div class="upload-box">
+            <h3>Unggah Foto Profil</h3>
+            <div class="upload-area" onclick="document.getElementById('userPhoto').click();">
+              <p>📷 Klik atau tarik file ke sini untuk mengunggah</p>
+              <input type="file" id="userPhoto" accept="image/*" hidden>
+            </div>
+            <div class="preview" id="userPreview"></div>
+          </div>
+        </main>
+  
+        <label>Nama</label>
+        <input type="text" id="userName" required>
+  
+        <label>Bio</label>
+        <textarea id="userBio" rows="3"></textarea>
+  
+        <label>Password</label>
+        <textarea id="userPass" rows="1"></textarea>
+  
+        <div class="modal-actions">
+          <button type="submit">Simpan</button>
+          <button type="button" id="cancelBtn">Batal</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+
+  <script src="admin-script.js"></script>
+</body>
+</html>

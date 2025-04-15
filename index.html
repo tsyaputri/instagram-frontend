@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - PicShare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <h1 class="logo">PicShare</h1>
+      <p class="tagline">Bagikan momenmu, kapan saja.</p>
+      
+      <input type="text" id="username" placeholder="Username">
+      <input type="password" id="password" placeholder="Password">
+
+      <div class="button-group">
+        <button onclick="login()">Sign In</button>
+        <a href="signup.html"><button type="button">Sign Up</button></a>
+      </div>
+      <p id="auth-message" style="color:red; margin-top:10px;"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

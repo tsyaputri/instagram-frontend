@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Daftar - PicShare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="edit-container">
+    <h2>Buat Akun Baru</h2>
+    <form id="signupForm">
+      <main class="upload-container">
+        <div class="upload-box">
+          <h3>Unggah Foto Profil</h3>
+          <div class="upload-area" onclick="document.getElementById('photoFile').click();">
+            <p>📷 Klik atau tarik file ke sini untuk mengunggah</p>
+            <input type="file" id="photoFile" accept="image/*" hidden onchange="previewPhoto()">
+          </div>
+          <div id="preview"></div>
+        </div>
+      </main>
+
+      <label for="username">Nama Pengguna</label>
+      <input type="text" id="username" required>
+
+      <label for="password">Password</label>
+      <input type="text" id="password" required>
+
+      <label for="bio">Bio</label>
+      <textarea id="bio" rows="3" placeholder="Ceritakan tentang dirimu..."></textarea>
+
+      <p id="auth-message" style="color: red;"></p>
+
+      <button type="submit" a href="index.html">Daftar</button>
+    </form>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>

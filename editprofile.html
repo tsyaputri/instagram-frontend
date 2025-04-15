@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Profil - PicShare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo">PicShare</h2>
+    <nav>
+      <a href="profile.html">Kembali</a>
+    </nav>
+  </header>
+
+  <div class="edit-container">
+    <h2>Edit Profil</h2>
+    <form id="editForm">
+        <main class="upload-container">
+          <div class="upload-box">
+            <h3>Unggah Foto Profil</h3>
+            <div class="upload-area" onclick="document.getElementById('photoFile').click();">
+              <p>📷 Klik atau tarik file ke sini untuk mengunggah</p>
+              <input type="file" id="photoFile" accept="image/*" hidden onchange="previewPhoto()">
+            </div>
+            <div id="preview"></div>
+          </div>
+        </main>
+  
+      <label for="editName">Nama</label>
+      <input type="text" id="editName" required>
+
+      <label for="editBio">Bio</label>
+      <textarea id="editBio" rows="3"></textarea>
+
+      <label for="editPass">Password</label>
+      <textarea id="editPass" rows="4"></textarea>
+
+      <button type="submit">Simpan Perubahan</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Profil - PicShare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo page">PicShare</h2>
+    <nav>
+      <a href="upload.html">Upload</a>
+      <a href="index.html">Keluar</a>
+    </nav>
+  </header>
+
+  <section class="profile-info">
+    <div class="profile-left">
+      <img src="https://i.pravatar.cc/100" class="profile-pic" alt="Foto Profil">
+      <div class="profile-details">
+        <h3 id="user-name">namapengguna</h3>
+        <p class="bio">Ini adalah bio pengguna. #fotografi #jalanjalan</p>
+      </div>
+    </div>
+    
+    <a href="editprofile.html" class="edit-button" title="Edit Profil">✏️</a>
+  </section>
+  
+
+  <section class="photo-grid" id="photo-gallery">
+    <!-- Foto-foto akan muncul di sini -->
+  </section>
+
+  <!-- Modal Zoom -->
+<div id="zoomModal" class="zoom-modal">
+  <span class="zoom-close" onclick="closeZoom()">&times;</span>
+  <img class="zoom-content" id="zoomedImg">
+</div>
+
+  <script src="script.js"></script>
+  <script>
+    loadUserPhotos();
+  </script>
+</body>
+</html>

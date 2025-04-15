@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Foto - PicShare</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h2 class="logo page">PicShare</h2>
+    <nav>
+      <a href="profile.html">Profil</a>
+      <a href="index.html">Keluar</a>
+    </nav>
+  </header>
+
+  <main class="upload-container">
+    <div class="upload-box">
+      <h3>Unggah Foto</h3>
+      <div class="upload-area" onclick="document.getElementById('photoFile').click();">
+        <p>📷 Klik atau tarik file ke sini untuk mengunggah</p>
+        <input type="file" id="photoFile" accept="image/*" hidden onchange="previewPhoto()">
+      </div>
+      <div id="preview"></div>
+      <button class="upload-btn" onclick="uploadPhoto()">Upload Sekarang</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

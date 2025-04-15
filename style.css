@@ -1,0 +1,344 @@
+:root {
+    --primary: #f60098;
+    --bg: #fafafa;
+    --text: #262626;
+    --border: #dbdbdb;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border);
+    background-color: white;
+  }
+  
+  .navbar nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+  }
+  
+  /* Auth Page */
+  .auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .auth-card {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+  }
+  
+  .auth-card input {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+  }
+  
+  .auth-card button {
+    width: 60%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: var(--primary);
+  }
+  
+  .tagline {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+/* Profile Page */
+.profile-info {
+  display: flex;
+  justify-content: space-between; /* Taruh konten di kiri dan tombol di kanan */
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-bottom: 1px solid var(--border);
+  background-color: rgb(255, 243, 245);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.profile-left {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+
+.profile-details h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.bio {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.edit-button {
+  font-size: 16px;
+  background-color: #ffe3e8;
+  color: #444;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #ffc5d0;
+}
+
+  
+  /*edit-profile page*/
+  * {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    background-color: #f0f2f5;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f60098;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #555;
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  
+  .edit-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .edit-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  .edit-container label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 500;
+  }
+  
+  .edit-container input[type="text"],
+  .edit-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .edit-container textarea {
+    resize: vertical;
+  }
+  
+  .edit-container input[type="file"] {
+    margin-top: 10px;
+  }
+  
+  .preview img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+  }
+  
+  .edit-container button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    background-color: #f60098;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .edit-container button:hover {
+    background-color: #f60098;
+  }
+  
+  /* Photo Grid */
+  .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    margin: 20px auto;        
+    max-width: 800px;         
+    border-bottom: 1px solid var(--border);
+    background-color: white;
+    border-radius: 8px;        
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05); 
+  }
+  
+  .photo-grid img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .zoom-modal {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .zoom-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+  }
+  
+  .zoom-close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Upload Page */
+  .upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+  }
+  
+  .upload-box {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+  
+  .upload-box h3 {
+    margin-bottom: 20px;
+    color: var(--text);
+  }
+  
+  .upload-area {
+    border: 2px dashed var(--border);
+    border-radius: 10px;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    color: #999;
+    font-size: 15px;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-area:hover {
+    background-color: #eee;
+  }
+  
+  #preview img {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .upload-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-btn:hover {
+    background-color: #f60098;
+  }
+  
+  
